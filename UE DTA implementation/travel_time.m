@@ -130,7 +130,7 @@ for t = 1:num_demands %all times
     
     if t == 1
         denominator = Departing_paths(t,p);
-        Arr = unique(Arriving_paths(Arriving_paths(:,p) <= Departing_paths(t,p) & Arriving_paths(:,p) > 0,p));
+        Arr = Arriving_paths(Arriving_paths(:,p) <= Departing_paths(t,p) & Arriving_paths(:,p) > 0,p);
         if isempty(Arr)
             act_travel_time(t,p) = 0;
         else
@@ -147,7 +147,7 @@ for t = 1:num_demands %all times
         end
     else   
         denominator = Departing_paths(t,p) - Departing_paths(t-1,p);
-        Arr = unique(Arriving_paths(Arriving_paths(:,p) <= Departing_paths(t,p) & Arriving_paths(:,p) > Departing_paths(t-1,p),p));
+        Arr = Arriving_paths(Arriving_paths(:,p) <= Departing_paths(t,p) & Arriving_paths(:,p) > Departing_paths(t-1,p),p);
         if isempty(Arr)
             act_travel_time(t,p) = 0;
         else
