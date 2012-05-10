@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario id="-2011" name="mySplitSymmetric_complex_sirius.xml" schemaVersion="1.0.0">
+   <settings>
+      <units>US</units>
+      <VehicleTypes>
+         <vehicleType name="General" weight="1"/>
+      </VehicleTypes>
+   </settings>
+   <FundamentalDiagramProfileSet>
+      <fundamentalDiagramProfile link_id="1">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="2">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="3">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="4">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="5">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="6">
+         <fundamentalDiagram capacity="300" capacityDrop="0" congestion_speed="20" densityJam="20" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="7">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="8">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="9">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="10">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="11">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="12">
+         <fundamentalDiagram capacity="600" capacityDrop="0" congestion_speed="20" densityJam="40" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="13">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="14">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="15">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="16">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="17">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="18">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="19">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="20">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="21">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+   </FundamentalDiagramProfileSet>
+   <NetworkList>
+      <network dt="60" id="-1" name="mySplitSymmetric">
+         <description>Created by Network Editor version xsd-1.0.19-3-g692e428</description>
+         <position>
+            <point elevation="0" lat="37.863203492255" lng="-122.295046448708"/>
+         </position>
+         <NodeList>
+            <node id="1" name="Node 1" type="terminal">
+               <description/>
+               <outputs>
+                  <output link_id="1"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="37.8679848396514" lng="-122.296553850174"/>
+               </position>
+            </node>
+            <node id="2" name="Node 2" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="2"/>
+               </outputs>
+               <inputs>
+                  <input link_id="1"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8670870528646" lng="-122.296296358109"/>
+               </position>
+            </node>
+            <node id="3" name="Node 3" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="3"/>
+                  <output link_id="7"/>
+                  <output link_id="13"/>
+               </outputs>
+               <inputs>
+                  <input link_id="2"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8652067469799" lng="-122.29803442955"/>
+               </position>
+            </node>
+            <node id="4" name="Node 4" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="4"/>
+               </outputs>
+               <inputs>
+                  <input link_id="3"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8660537375511" lng="-122.293614149094"/>
+               </position>
+            </node>
+            <node id="5" name="Node 5" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="5"/>
+               </outputs>
+               <inputs>
+                  <input link_id="4"/>
+                  <input link_id="17"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8598874236582" lng="-122.296296358109"/>
+               </position>
+            </node>
+            <node id="6" name="Node 6" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="6"/>
+               </outputs>
+               <inputs>
+                  <input link_id="5"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8607683572307" lng="-122.291940450668"/>
+               </position>
+            </node>
+            <node id="7" name="Node 7" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="21"/>
+               </outputs>
+               <inputs>
+                  <input link_id="6"/>
+                  <input link_id="12"/>
+                  <input link_id="20"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8607683572307" lng="-122.291940450668"/>
+               </position>
+            </node>
+            <node id="8" name="Node 8" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="8"/>
+               </outputs>
+               <inputs>
+                  <input link_id="7"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="9" name="Node 9" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="9"/>
+               </outputs>
+               <inputs>
+                  <input link_id="8"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="10" name="Node 10" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="10"/>
+               </outputs>
+               <inputs>
+                  <input link_id="9"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="11" name="Node 11" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="11"/>
+               </outputs>
+               <inputs>
+                  <input link_id="10"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="12" name="Node 12" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="12"/>
+               </outputs>
+               <inputs>
+                  <input link_id="11"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="13" name="Node 13" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="14"/>
+               </outputs>
+               <inputs>
+                  <input link_id="13"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="14" name="Node 14" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="15"/>
+               </outputs>
+               <inputs>
+                  <input link_id="14"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="15" name="Node 15" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="16"/>
+                  <output link_id="17"/>
+               </outputs>
+               <inputs>
+                  <input link_id="15"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="16" name="Node 16" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="18"/>
+               </outputs>
+               <inputs>
+                  <input link_id="16"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="17" name="Node 17" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="19"/>
+               </outputs>
+               <inputs>
+                  <input link_id="18"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="18" name="Node 18" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="20"/>
+               </outputs>
+               <inputs>
+                  <input link_id="19"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="19" name="Node 19" type="terminal">
+               <description/>
+               <outputs/>
+               <inputs>
+                  <input link_id="21"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8585998864203" lng="-122.293592691422"/>
+               </position>
+            </node>
+         </NodeList>
+         <LinkList>
+            <link id="1" lanes="1" length="1" name="1 to 2" record="false" type="freeway">
+               <begin node_id="1"/>
+               <end node_id="2"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="2" lanes="1" length="1" name="2 to 3" record="false" type="freeway">
+               <begin node_id="2"/>
+               <end node_id="3"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="3" lanes="1" length="1" name="3 to 4" record="false" type="freeway">
+               <begin node_id="3"/>
+               <end node_id="4"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="4" lanes="1" length="1" name="4 to 5" record="false" type="freeway">
+               <begin node_id="4"/>
+               <end node_id="5"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="5" lanes="1" length="1" name="5 to 6" record="false" type="freeway">
+               <begin node_id="5"/>
+               <end node_id="6"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="6" lanes="1" length="1" name="6 to 7" record="false" type="freeway">
+               <begin node_id="6"/>
+               <end node_id="7"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="7" lanes="1" length="1" name="3 to 8" record="false" type="freeway">
+               <begin node_id="3"/>
+               <end node_id="8"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="8" lanes="1" length="1" name="8 to 9" record="false" type="freeway">
+               <begin node_id="8"/>
+               <end node_id="9"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="9" lanes="1" length="1" name="9 to 10" record="false" type="freeway">
+               <begin node_id="9"/>
+               <end node_id="10"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="10" lanes="1" length="1" name="10 to 11" record="false" type="freeway">
+               <begin node_id="10"/>
+               <end node_id="11"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="11" lanes="1" length="1" name="9 to 10" record="false" type="freeway">
+               <begin node_id="11"/>
+               <end node_id="12"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="12" lanes="1" length="1" name="12 to 7" record="false" type="freeway">
+               <begin node_id="12"/>
+               <end node_id="7"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="13" lanes="1" length="1" name="3 to 13" record="false" type="freeway">
+               <begin node_id="3"/>
+               <end node_id="13"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="14" lanes="1" length="1" name="13 to 14" record="false" type="freeway">
+               <begin node_id="13"/>
+               <end node_id="14"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="15" lanes="1" length="1" name="14 to 15" record="false" type="freeway">
+               <begin node_id="14"/>
+               <end node_id="15"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="16" lanes="1" length="1" name="15 to 16" record="false" type="freeway">
+               <begin node_id="15"/>
+               <end node_id="16"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="17" lanes="1" length="1" name="15 to 5" record="false" type="freeway">
+               <begin node_id="15"/>
+               <end node_id="5"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="18" lanes="1" length="1" name="16 to 17" record="false" type="freeway">
+               <begin node_id="16"/>
+               <end node_id="17"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="19" lanes="1" length="1" name="17 to 18" record="false" type="freeway">
+               <begin node_id="17"/>
+               <end node_id="18"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="20" lanes="1" length="1" name="18 to 7" record="false" type="freeway">
+               <begin node_id="18"/>
+               <end node_id="7"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="21" lanes="1" length="1" name="7 to 19" record="false" type="freeway">
+               <begin node_id="7"/>
+               <end node_id="19"/>
+               <dynamics type="CTM"/>
+            </link>
+         </LinkList>
+      </network>
+   </NetworkList>
+</scenario>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario id="-2011" name="mySplitSymmetric_LongerRightPath_sirius.xml" schemaVersion="1.0.0">
+   <settings>
+      <VehicleTypes>
+		 <vehicleType name="SOV" weight="1"/>
+	  </VehicleTypes>
+	  <units>US</units>
+   </settings>
+   <FundamentalDiagramProfileSet>
+      <fundamentalDiagramProfile link_id="1">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="2">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="3">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="4">
+         <fundamentalDiagram capacity="240" capacityDrop="0" congestion_speed="20" densityJam="16" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="5">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="6">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="7">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="8">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile link_id="9">
+         <fundamentalDiagram capacity="1200" capacityDrop="0" congestion_speed="20" densityJam="80" freeflow_speed="60"/>
+      </fundamentalDiagramProfile>	  
+   </FundamentalDiagramProfileSet>
+   <NetworkList>
+      <network dt="60" id="-1" name="mySplitSymmetric">
+         <description>Created by Network Editor version xsd-1.0.19-3-g692e428</description>
+         <position>
+            <point elevation="0" lat="37.863203492255" lng="-122.295046448708"/>
+         </position>
+         <NodeList>
+            <node id="1" name="Node 1" type="terminal">
+               <description/>
+               <outputs>
+                  <output link_id="1"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="37.8679848396514" lng="-122.296553850174"/>
+               </position>
+            </node>		 
+            <node id="2" name="Node 2" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="2"/>
+                  <output link_id="5"/>
+               </outputs>
+               <inputs>
+                  <input link_id="1"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8670870528646" lng="-122.296296358109"/>
+               </position>
+            </node>
+            <node id="3" name="Node 3" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="3"/>
+               </outputs>
+               <inputs>
+                  <input link_id="2"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8652067469799" lng="-122.29803442955"/>
+               </position>
+            </node>
+            <node id="4" name="Node 4" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="6"/>
+               </outputs>
+               <inputs>
+                  <input link_id="5"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8660537375511" lng="-122.293614149094"/>
+               </position>
+            </node>
+            <node id="5" name="Node 5" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="4"/>
+               </outputs>
+               <inputs>
+                  <input link_id="3"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8598874236582" lng="-122.296296358109"/>
+               </position>
+            </node>
+            <node id="6" name="Node 6" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="7"/>
+               </outputs>
+               <inputs>
+                  <input link_id="6"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8607683572307" lng="-122.291940450668"/>
+               </position>
+            </node>
+            <node id="7" name="Node 7" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="8"/>
+               </outputs>
+               <inputs>
+                  <input link_id="7"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8607683572307" lng="-122.291940450668"/>
+               </position>
+            </node>			
+            <node id="8" name="Node 8" type="simple">
+               <description/>
+               <outputs>
+                  <output link_id="9"/>
+               </outputs>
+               <inputs>
+                  <input link_id="4"/>
+                  <input link_id="8"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8600398936838" lng="-122.294043302536"/>
+               </position>
+            </node>
+            <node id="9" name="Node 9" type="terminal">
+               <description/>
+               <outputs/>
+               <inputs>
+                  <input link_id="9"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="37.8585998864203" lng="-122.293592691422"/>
+               </position>
+            </node>
+         </NodeList>
+         <LinkList>
+            <link id="1" lanes="1" length="1" name="1 to 2" record="false" type="freeway">
+               <begin node_id="1"/>
+               <end node_id="2"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="2" lanes="1" length="1" name="2 to 3" record="false" type="freeway">
+               <begin node_id="2"/>
+               <end node_id="3"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="3" lanes="1" length="1" name="3 to 5" record="false" type="freeway">
+               <begin node_id="3"/>
+               <end node_id="5"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="4" lanes="1" length="1" name="5 to 7" record="false" type="freeway">
+               <begin node_id="5"/>
+               <end node_id="8"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="5" lanes="1" length="1" name="2 to 4" record="false" type="freeway">
+               <begin node_id="2"/>
+               <end node_id="4"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="6" lanes="1" length="1" name="4 to 6" record="false" type="freeway">
+               <begin node_id="4"/>
+               <end node_id="6"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="7" lanes="1" length="1" name="6 to 7" record="false" type="freeway">
+               <begin node_id="6"/>
+               <end node_id="7"/>
+               <dynamics type="CTM"/>
+            </link>
+            <link id="8" lanes="1" length="1" name="7 to 8" record="false" type="freeway">
+               <begin node_id="7"/>
+               <end node_id="8"/>
+               <dynamics type="CTM"/>
+            </link>			
+            <link id="9" lanes="1" length="1" name="8 to 9" record="false" type="freeway">
+               <begin node_id="8"/>
+               <end node_id="9"/>
+               <dynamics type="CTM"/>
+            </link>
+         </LinkList>
+      </network>
+   </NetworkList>
+</scenario>
