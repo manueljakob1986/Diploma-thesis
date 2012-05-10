@@ -3,7 +3,7 @@ function [act_travel_time,Arriving,Departing] = travel_time(x_veh,flow,paths,dis
 %Here we are going to compute the actual travel time and the cumulative 
 %numbers of the vehicles departures and arrivals after we run the
 %cell-transmission-model (CTM) from Daganzo in the function 
-%CTM_network_load.m.
+%CTM_network_load.m. 
 %[act_travel_time,Arriving,Departing] =
 %travel_time(x_veh,flow,paths,discretesplits_nodes,dt,source,num_demands).
 %--------------------------------------------------------------------------
