@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario id="-2011" name="SimpleNetwork.xml" schemaVersion="1.0.0">
+
+<settings>
+  <units>US</units>
+  <display dt="120" timeout="0" timeInitial="0" timeMax="900" />
+</settings>
+
+<network id="-1" name="SimpleNetwork" ml_control="false" q_control="false"  dt="120.0">
+
+<NodeList>
+<node id="-1" name="" type="T">
+    <outputs>
+		<output link_id="-1"/>
+    </outputs>
+	<inputs/>
+    <position>
+		<point lat="0" lng="0"/>
+    </position>
+</node>
+<node id="-2" name="" type="S">
+    <outputs>
+		<output link_id="-2"/>
+    </outputs>
+	<inputs>
+		<input link_id="-1"/>
+    </inputs>
+    <position>
+		<point lat="0" lng="0"/>
+    </position>
+</node>
+<node id="-3" name="" type="T">
+	<outputs/>
+    <inputs>
+		<input link_id="-2"/>
+    </inputs>
+    <position>
+		<point lat="0" lng="0"/>
+    </position>
+</node>
+</NodeList>
+
+<LinkList>
+<link id="-1" lanes="1" length="2" record="true" type="FW">
+   <begin node_id="-1"/>
+   <end node_id="-2"/>
+   <dynamics type="CTM"/>
+   <fd densityCritical ="20.0" densityJam="80.0" flowMax="1200.0" capacityDrop="0.0"/>
+</link>
+<link id="-2" lanes="1" length="2" record="true" type="FW">
+   <begin node_id="-2"/>
+   <end node_id="-3"/>
+   <dynamics type="CTM"/>
+   <fd densityCritical ="20.0" densityJam="80.0" flowMax="1200.0" capacityDrop="0.0"/>
+</link>
+</LinkList>
+ 
+</network>
+
+<CompliantInitialDensityProfile>
+<density link_id="-1">0.0</density>
+<density link_id="-2">0.0</density>
+</CompliantInitialDensityProfile>
+
+<NonCompliantInitialDensityProfile>
+<density link_id="-1">0.0</density>
+<density link_id="-2">0.0</density>
+</NonCompliantInitialDensityProfile>
+
+<CompliantDemandProfileSet>
+<demand link_id="-1" start_time="0" dt="3600" knob="0">0.1, 0.1, 0.0</demand>
+</CompliantDemandProfileSet>
+
+<NonCompliantDemandProfileSet>
+<demand link_id="-1" start_time="0" dt="3600" knob="0">0.0</demand>
+</NonCompliantDemandProfileSet>
+
+</scenario>

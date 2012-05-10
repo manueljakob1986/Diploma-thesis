@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario id="-2011" name="mySplitNetwork_order.xml" schemaVersion="1.0.0">
+
+<settings>
+  <units>US</units>
+  <display dt="60" timeout="0" timeInitial="0" timeMax="900" />
+</settings>
+
+<network id="-1" name="mySplitNetwork_order" ml_control="false" q_control="false"  dt="5.0">
+
+<NodeList>
+<node type="T" id="-1" name="Node -1">
+  <description></description>
+  <outputs>
+    <output link_id="-1"/>
+  </outputs>
+  <inputs>
+  </inputs>
+  <position><point lat="37.876560693000066" lng="-122.29460120201111" elevation="0.0"/></position>
+</node>
+<node type="F" id="-2" name="Node -2">
+  <description></description>
+  <outputs>
+    <output link_id="-2"/>
+    <output link_id="-7"/>
+  </outputs>
+  <inputs>
+    <input link_id="-1">
+      <weavingfactors>1.0, 1.0, 1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87343908275432" lng="-122.29360342025757" elevation="0.0"/></position>
+</node>
+<node type="F" id="-3" name="Node -3">
+  <description></description>
+  <outputs>
+	<output link_id="-3"/>
+  </outputs>
+  <inputs>
+    <input link_id="-2">
+      <weavingfactors></weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87167412032526" lng="-122.29304552078247" elevation="0.0"/></position>
+</node>
+<node type="F" id="-4" name="Node -4">
+  <description></description>
+  <outputs>
+    <output link_id="-4"/>
+  </outputs>
+  <inputs>
+    <input link_id="-3">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.86908588398602" lng="-122.2921872138977" elevation="0.0"/></position>
+</node>
+<node type="F" id="-5" name="Node -5">
+  <description></description>
+  <outputs>
+    <output link_id="-5"/>
+  </outputs>
+  <inputs>
+    <input link_id="-4">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.866384061236964" lng="-122.291339635849" elevation="0.0"/></position>
+</node>
+<node type="F" id="-6" name="Node -6">
+  <description></description>
+  <outputs>
+    <output link_id="-6"/>
+  </outputs>
+  <inputs>
+    <input link_id="-5">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+    <input link_id="-11">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.86463078783273" lng="-122.29074954986572" elevation="0.0"/></position>
+</node>
+<node type="T" id="-7" name="Node -7">
+  <description></description>
+  <outputs>
+  </outputs>
+  <inputs>
+    <input link_id="-6">
+      <weavingfactors></weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.862869002491905" lng="-122.2901701927185" elevation="0.0"/></position>
+</node>
+<node type="F" id="-8" name="Node -8">
+  <description></description>
+  <outputs>
+    <output link_id="-8"/>
+  </outputs>
+  <inputs>
+    <input link_id="-7">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.8739218146361" lng="-122.29004144668579" elevation="0.0"/></position>
+</node>
+<node type="F" id="-9" name="Node -9">
+  <description></description>
+  <outputs>
+    <output link_id="-9"/>
+  </outputs>
+  <inputs>
+    <input link_id="-8">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87066966505641" lng="-122.28967666625977" elevation="0.0"/></position>
+</node>
+<node type="F" id="-10" name="Node -10">
+  <description></description>
+  <outputs>
+    <output link_id="-10"/>
+  </outputs>
+  <inputs>
+    <input link_id="-9">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.86669744387722" lng="-122.28901147842407" elevation="0.0"/></position>
+</node>
+<node type="F" id="-11" name="Node -11">
+  <description></description>
+  <outputs>
+    <output link_id="-11"/>
+  </outputs>
+  <inputs>
+    <input link_id="-10">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.864910297983734" lng="-122.28863596916199" elevation="0.0"/></position>
+</node>
+</NodeList>
+
+<LinkList>
+<link type="FW" id="-1" name="-1 -> -2" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-1"/>
+  <end node_id="-2"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="10000.0" densityJam="20000.0" flowMax="3600000.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-2" name="-2 -> -3" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-2"/>
+  <end node_id="-3"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="40" densityJam="80" flowMax="2200.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-3" name="-3 -> -4" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-3"/>
+  <end node_id="-4"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="40" densityJam="80" flowMax="2200.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-4" name="-4 -> -5" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-4"/>
+  <end node_id="-5"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="40" densityJam="80" flowMax="2200.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-5" name="-5 -> -6" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-5"/>
+  <end node_id="-6"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="40" densityJam="80" flowMax="2200.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-6" name="-6 -> -7" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-6"/>
+  <end node_id="-7"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="10000.0" densityJam="20000.0" flowMax="3600000.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-7" name="-2 -> -8" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-2"/>
+  <end node_id="-8"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="80" densityJam="160" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-8" name="-8 -> -9" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-8"/>
+  <end node_id="-9"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="80" densityJam="160" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-9" name="-9 -> -10" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-9"/>
+  <end node_id="-10"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="80" densityJam="160" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-10" name="-10 -> -11" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-10"/>
+  <end node_id="-11"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="80" densityJam="160" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-11" name="-11 -> -6" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-11"/>
+  <end node_id="-6"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="80" densityJam="160" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+</LinkList>
+
+</network>
+
+<CompliantInitialDensityProfile>
+<density link_id="-1">0.0</density>
+<density link_id="-2">0.0</density>
+<density link_id="-3">0.0</density>
+<density link_id="-4">0.0</density>
+<density link_id="-5">0.0</density>
+<density link_id="-6">0.0</density>
+<density link_id="-7">0.0</density>
+<density link_id="-8">0.0</density>
+<density link_id="-9">0.0</density>
+<density link_id="-10">0.0</density>
+<density link_id="-11">0.0</density>
+</CompliantInitialDensityProfile>
+
+<NonCompliantInitialDensityProfile>
+<density link_id="-1">0</density>
+<density link_id="-2">44.4444444</density>
+<density link_id="-3">44.4444444</density>
+<density link_id="-4">44.4444444</density>
+<density link_id="-5">44.4444444</density>
+<density link_id="-6">0.0</density>
+<density link_id="-7">0.0</density>
+<density link_id="-8">0.0</density>
+<density link_id="-9">0.0</density>
+<density link_id="-10">0.0</density>
+<density link_id="-11">0.0</density>
+</NonCompliantInitialDensityProfile>
+
+<!--
+1)
+<NonCompliantInitialDensityProfile>
+<density link_id="-1">0.0</density>
+<density link_id="-2">0.0</density>
+<density link_id="-3">0.0</density>
+<density link_id="-4">0.0</density>
+<density link_id="-5">0.0</density>
+<density link_id="-6">0.0</density>
+<density link_id="-7">0.0</density>
+<density link_id="-8">0.0</density>
+<density link_id="-9">0.0</density>
+<density link_id="-10">0.0</density>
+<density link_id="-11">0.0</density>
+</NonCompliantInitialDensityProfile>
+
+3)
+<NonCompliantInitialDensityProfile>
+<density link_id="-1">0.0</density>
+<density link_id="-2">44.4444444</density>
+<density link_id="-3">44.4444444</density>
+<density link_id="-4">44.4444444</density>
+<density link_id="-5">44.4444444</density>
+<density link_id="-6">0.0</density>
+<density link_id="-7">0.0</density>
+<density link_id="-8">0.0</density>
+<density link_id="-9">0.0</density>
+<density link_id="-10">0.0</density>
+<density link_id="-11">0.0</density>
+</NonCompliantInitialDensityProfile>
+-->
+
+<CompliantDemandProfileSet>
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">50.0, 50.0, 50.0, 50.0, 50.0, 0.0</demand>
+<!-- compliant demands vectors
+1) All demand on fast route (all compliant). The UE solution is the same.
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">36.0, 36.0, 36.0, 36.0, 36.0, 0.0</demand>
+2) Demand is beyond capacity of fast route (all compliant).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">50.0, 50.0, 50.0, 50.0, 50.0, 0.0</demand>
+3) Demand is beyond capacity of fast route (10% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">5.0, 5.0, 5.0, 5.0, 5.0, 0.0</demand>
+4) Demand is beyond capacity of fast route (5% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">2.5, 2.5, 2.5, 2.5, 2.5, 0.0</demand>
+5) Demand is beyond capacity of fast route (20% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">10.0, 10.0, 10.0, 10.0, 10.0, 0.0</demand>
+6) Demand is beyond capacity of fast route (0% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">0.0</demand>
+7) Demand is beyond capacity of fast route (40% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">20.0, 20.0, 20.0, 20.0, 20.0, 0.0</demand>
+8) Demand is beyond capacity of fast route (100% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">50.0, 50.0, 50.0, 50.0, 50.0, 0.0</demand>
+-->
+</CompliantDemandProfileSet>
+
+<NonCompliantDemandProfileSet>
+<demand link_id="-1" start_time="0" dt="3600" knob="0.711112">0.0</demand>
+<!-- no-ncompliant demands vectors
+1) All demand on fast route (all compliant). The UE solution is the same.
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">0.0</demand>
+2) Demand is beyond capacity of fast route (all compliant).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">0.0</demand>
+3) Demand is beyond capacity of fast route (10% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">45.0, 45.0, 45.0, 45.0, 45.0, 0.0</demand>
+4) Demand is beyond capacity of fast route (5% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">47.5, 47.5, 47.5, 47.5, 47.5, 0.0</demand>
+5) Demand is beyond capacity of fast route (20% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">40.0, 40.0, 40.0, 40.0, 40.0, 0.0</demand>
+6) Demand is beyond capacity of fast route (0% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">50.0, 50.0, 50.0, 50.0, 50.0, 0.0</demand>
+7) Demand is beyond capacity of fast route (40% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">30.0, 30.0, 30.0, 30.0, 30.0, 0.0</demand>
+8) Demand is beyond capacity of fast route (100% compliant, split ratio based on steady state UE).
+<demand link_id="-1" start_time="0" dt="3600" knob="1.0">0.0</demand>
+-->
+</NonCompliantDemandProfileSet>
+
+
+</scenario>

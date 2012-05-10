@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario id="-2011" name="mySplitNetwork_longer_alternative_route.xml" schemaVersion="1.0.0">
+
+<settings>
+  <units>US</units>
+  <display dt="60" timeout="0" timeInitial="0" timeMax="1200" />
+</settings>
+
+<network id="-1" name="mySplitNetwork_longer_alternative_route" ml_control="false" q_control="false"  dt="5.0">
+
+<NodeList>
+<node type="T" id="-1" name="Node -1">
+  <description></description>
+  <outputs>
+    <output link_id="-1"/>
+  </outputs>
+  <inputs>
+  </inputs>
+  <position><point lat="37.876560693000066" lng="-122.29460120201111" elevation="0.0"/></position>
+</node>
+<node type="F" id="-2" name="Node -2">
+  <description></description>
+  <outputs>
+    <output link_id="-2"/>
+    <output link_id="-7"/>
+  </outputs>
+  <inputs>
+    <input link_id="-1">
+      <weavingfactors>1.0, 1.0, 1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.873488202984916" lng="-122.29362487792969" elevation="0.0"/></position>
+</node>
+<node type="F" id="-3" name="Node -3">
+  <description></description>
+  <outputs>
+	<output link_id="-3"/>
+  </outputs>
+  <inputs>
+    <input link_id="-2">
+      <weavingfactors></weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.871691058745355" lng="-122.29304552078247" elevation="0.0"/></position>
+</node>
+<node type="F" id="-4" name="Node -4">
+  <description></description>
+  <outputs>
+    <output link_id="-4"/>
+  </outputs>
+  <inputs>
+    <input link_id="-3">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.86908588398602" lng="-122.2921872138977" elevation="0.0"/></position>
+</node>
+<node type="F" id="-5" name="Node -5">
+  <description></description>
+  <outputs>
+    <output link_id="-5"/>
+  </outputs>
+  <inputs>
+    <input link_id="-4">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.866384061236964" lng="-122.291339635849" elevation="0.0"/></position>
+</node>
+<node type="F" id="-6" name="Node -6">
+  <description></description>
+  <outputs>
+    <output link_id="-6"/>
+  </outputs>
+  <inputs>
+    <input link_id="-5">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+    <input link_id="-13">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.86463078783273" lng="-122.29074954986572" elevation="0.0"/></position>
+</node>
+<node type="T" id="-7" name="Node -7">
+  <description></description>
+  <outputs>
+  </outputs>
+  <inputs>
+    <input link_id="-6">
+      <weavingfactors></weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.862869002491905" lng="-122.2901701927185" elevation="0.0"/></position>
+</node>
+<node type="F" id="-8" name="Node -8">
+  <description></description>
+  <outputs>
+    <output link_id="-8"/>
+  </outputs>
+  <inputs>
+    <input link_id="-7">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87393832909587" lng="-122.29005217552185" elevation="0.0"/></position>
+</node>
+<node type="F" id="-9" name="Node -9">
+  <description></description>
+  <outputs>
+    <output link_id="-9"/>
+  </outputs>
+  <inputs>
+    <input link_id="-8">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87209249816604" lng="-122.2898268699646" elevation="0.0"/></position>
+</node>
+<node type="F" id="-10" name="Node -10">
+  <description></description>
+  <outputs>
+    <output link_id="-10"/>
+  </outputs>
+  <inputs>
+    <input link_id="-9">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87056803307285" lng="-122.28963375091553" elevation="0.0"/></position>
+</node>
+<node type="F" id="-11" name="Node -11">
+  <description></description>
+  <outputs>
+    <output link_id="-11"/>
+  </outputs>
+  <inputs>
+    <input link_id="-10">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.86801702426433" lng="-122.2892689704895" elevation="0.0"/></position>
+</node>
+<node type="F" id="-12" name="Node -12">
+  <description></description>
+  <outputs>
+    <output link_id="-12"/>
+  </outputs>
+  <inputs>
+    <input link_id="-11">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.86668050431373" lng="-122.28899002075195" elevation="0.0"/></position>
+</node>
+<node type="F" id="-13" name="Node -13">
+  <description></description>
+  <outputs>
+    <output link_id="-13"/>
+  </outputs>
+  <inputs>
+    <input link_id="-12">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.8648848880179" lng="-122.28861451148987" elevation="0.0"/></position>
+</node>
+</NodeList>
+
+<LinkList>
+<link type="FW" id="-1" name="-1 -> -2" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-1"/>
+  <end node_id="-2"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="10000.0" densityJam="20000.0" flowMax="3600000.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-2" name="-2 -> -3" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-2"/>
+  <end node_id="-3"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="33.2307692" densityJam="66.4615385" flowMax="2160.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-3" name="-3 -> -4" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-3"/>
+  <end node_id="-4"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="33.2307692" densityJam="66.4615385" flowMax="2160.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-4" name="-4 -> -5" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-4"/>
+  <end node_id="-5"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="33.2307692" densityJam="66.4615385" flowMax="2160.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-5" name="-5 -> -6" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-5"/>
+  <end node_id="-6"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="33.2307692" densityJam="66.4615385" flowMax="2160.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-6" name="-6 -> -7" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-6"/>
+  <end node_id="-7"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="10000.0" densityJam="20000.0" flowMax="3600000.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-7" name="-2 -> -8" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-2"/>
+  <end node_id="-8"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="66.4615385" densityJam="132.923077" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-8" name="-8 -> -9" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-8"/>
+  <end node_id="-9"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="66.4615385" densityJam="132.923077" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-9" name="-9 -> -10" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-9"/>
+  <end node_id="-10"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="66.4615385" densityJam="132.923077" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-10" name="-10 -> -11" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-10"/>
+  <end node_id="-11"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="66.4615385" densityJam="132.923077" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-11" name="-11 -> -12" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-11"/>
+  <end node_id="-12"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="66.4615385" densityJam="132.923077" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-12" name="-12 -> -13" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-12"/>
+  <end node_id="-13"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="66.4615385" densityJam="132.923077" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+<link type="FW" id="-13" name="-13 -> -6" length="1.0" lanes="1.0" record="false">
+  <begin node_id="-13"/>
+  <end node_id="-6"/>
+  <dynamics type="CTM"/>
+  <qmax>100.0</qmax>
+  <fd densityCritical ="66.4615385" densityJam="132.923077" flowMax="4320.0" capacityDrop="0.0"/>
+</link>
+</LinkList>
+
+</network>
+
+<CompliantInitialDensityProfile>
+<density link_id="-1">0.0</density>
+<density link_id="-2">0.0</density>
+<density link_id="-3">0.0</density>
+<density link_id="-4">0.0</density>
+<density link_id="-5">0.0</density>
+<density link_id="-6">0.0</density>
+<density link_id="-7">0.0</density>
+<density link_id="-8">0.0</density>
+<density link_id="-9">0.0</density>
+<density link_id="-10">0.0</density>
+<density link_id="-11">0.0</density>
+</CompliantInitialDensityProfile>
+
+<NonCompliantInitialDensityProfile>
+<density link_id="-1">0.0</density>
+<density link_id="-2">0.0</density>
+<density link_id="-3">0.0</density>
+<density link_id="-4">0.0</density>
+<density link_id="-5">0.0</density>
+<density link_id="-6">0.0</density>
+<density link_id="-7">0.0</density>
+<density link_id="-8">0.0</density>
+<density link_id="-9">0.0</density>
+<density link_id="-10">0.0</density>
+<density link_id="-11">0.0</density>
+</NonCompliantInitialDensityProfile>
+
+<CompliantDemandProfileSet>
+<demand link_id="-1" start_time="0" dt="3600" >36.0, 36.0, 36.0, 36.0, 36.0, 0.0</demand>
+</CompliantDemandProfileSet>
+
+<NonCompliantDemandProfileSet>
+<demand link_id="-1" start_time="0" dt="3600" knob="0.8">40.0, 40.0, 40.0, 40.0, 40.0, 0.0</demand>
+</NonCompliantDemandProfileSet>
+
+</scenario>

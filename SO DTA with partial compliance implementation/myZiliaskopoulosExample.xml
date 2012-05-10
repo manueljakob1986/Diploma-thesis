@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario id="-2011" name="myZiliaskopoulosExample.xml" schemaVersion="1.0.0">
+
+<settings>
+  <units>US</units>
+  <display dt="10" timeout="0" timeInitial="0" timeMax="100" />
+</settings>
+
+<network id="-1" name="myZiliaskopoulosExample" ml_control="false" q_control="false"  dt="10.0">
+
+<NodeList>
+<node type="F" id="-1" name="Node -1">
+  <description></description>
+  <outputs>
+    <output link_id="-1"/>
+  </outputs>
+  <inputs>
+    <input link_id="-8">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87943489647143" lng="-122.3013174533844" elevation="0.0"/></position>
+</node>
+<node type="F" id="-2" name="Node -2">
+  <description></description>
+  <outputs>
+    <output link_id="-2"/>
+    <output link_id="-5"/>
+  </outputs>
+  <inputs>
+    <input link_id="-1">
+      <weavingfactors>1.0, 1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87642011328838" lng="-122.30033040046692" elevation="0.0"/></position>
+</node>
+<node type="F" id="-3" name="Node -3">
+  <description></description>
+  <outputs>
+    <output link_id="-3"/>
+  </outputs>
+  <inputs>
+    <input link_id="-2">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+    <input link_id="-7">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87365927663546" lng="-122.30183243751526" elevation="0.0"/></position>
+</node>
+<node type="F" id="-4" name="Node -4">
+  <description></description>
+  <outputs>
+    <output link_id="-4"/>
+  </outputs>
+  <inputs>
+    <input link_id="-3">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+    <input link_id="-6">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87230761458336" lng="-122.29910731315613" elevation="0.0"/></position>
+</node>
+<node type="F" id="-5" name="Node -5">
+  <description></description>
+  <outputs>
+    <output link_id="-9"/>
+  </outputs>
+  <inputs>
+    <input link_id="-4">
+      <weavingfactors>1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.869331499322136" lng="-122.29806661605835" elevation="0.0"/></position>
+</node>
+<node type="F" id="-6" name="Node -6">
+  <description></description>
+  <outputs>
+    <output link_id="-6"/>
+    <output link_id="-7"/>
+  </outputs>
+  <inputs>
+    <input link_id="-5">
+      <weavingfactors>1.0, 1.0</weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.87415047599941" lng="-122.29962229728699" elevation="0.0"/></position>
+</node>
+<node type="T" id="-7" name="Node -7">
+  <description></description>
+  <outputs>
+    <output link_id="-8"/>
+  </outputs>
+  <inputs>
+  </inputs>
+  <position><point lat="37.88119628571623" lng="-122.3018753528595" elevation="0.0"/></position>
+</node>
+<node type="T" id="-8" name="Node -8">
+  <description></description>
+  <outputs>
+  </outputs>
+  <inputs>
+    <input link_id="-9">
+      <weavingfactors></weavingfactors>
+    </input>
+  </inputs>
+  <position><point lat="37.866697443874905" lng="-122.29726195335388" elevation="0.0"/></position>
+</node>
+</NodeList>
+
+<LinkList>
+      <link name="-1 -> -2" road_name="6th St" lanes="2" length="0.094696" type="FW" id="-1" record="false">
+        <description></description>
+        <begin node_id="-1"/>
+        <end node_id="-2"/>
+        <fd densityCritical="126.72" flowMax="4320.0" densityJam="253.44"/>
+        <dynamics type="CTM"/>
+        <qmax>20</qmax>
+      </link>
+      <link name="-2 -> -3" road_name="Page St" lanes="1" length="0.094696" type="FW" id="-2" record="false">
+        <description></description>
+        <begin node_id="-2"/>
+        <end node_id="-3"/>
+        <fd densityCritical="63.36" flowMax="2160.0" densityJam="126.72"/>
+        <dynamics type="CTM"/>
+        <qmax>10</qmax>
+      </link>
+      <link name="-3 -> -4" road_name="4th St" lanes="1" length="0.189392" type="FW" id="-3" record="false">
+        <description></description>
+        <begin node_id="-3"/>
+        <end node_id="-4"/>
+        <fd densityCritical="63.36" flowMax="2160.0" densityJam="126.72"/>
+        <dynamics type="CTM"/>
+        <qmax>10</qmax>
+      </link>
+      <link name="-4 -> -5" road_name="6th St" lanes="2" length="0.094696" type="FW" id="-4" record="false">
+        <description></description>
+        <begin node_id="-4"/>
+        <end node_id="-5"/>
+        <fd densityCritical="126.72" flowMax="4320.0" densityJam="253.44"/>
+        <dynamics type="CTM"/>
+        <qmax>20</qmax>
+      </link>
+      <link name="-2 -> -6" road_name="6th St" lanes="1" length="0.094696" type="FW" id="-5" record="false">
+        <description></description>
+        <begin node_id="-2"/>
+        <end node_id="-6"/>
+        <fd densityCritical="63.36" flowMax="2160.0" densityJam="126.72"/>
+        <dynamics type="CTM"/>
+        <qmax>10</qmax>
+      </link>
+      <link name="-6 -> -4" road_name="6th St" lanes="1" length="0.094696" type="FW" id="-6" record="false">
+        <description></description>
+        <begin node_id="-6"/>
+        <end node_id="-4"/>
+        <fd densityCritical="63.36" flowMax="2160.0" densityJam="126.72"/>
+        <dynamics type="CTM"/>
+        <qmax>10</qmax>
+      </link>
+      <link name="-6 -> -3" road_name="Cedar St" lanes="1" length="0.094696" type="FW" id="-7" record="false">
+        <description></description>
+        <begin node_id="-6"/>
+        <end node_id="-3"/>
+        <fd densityCritical="63.36" flowMax="2160.0" densityJam="126.72"/>
+        <dynamics type="CTM"/>
+        <qmax>10</qmax>
+      </link>
+      <link name="-7 -> -1" road_name="6th St" lanes="2" length="0.094696" type="FW" id="-8" record="false">
+        <description></description>
+        <begin node_id="-7"/>
+        <end node_id="-1"/>
+        <fd densityCritical="126.72" flowMax="4320.0" densityJam="253.44"/>
+        <dynamics type="CTM"/>
+        <qmax>10000</qmax>
+      </link>
+      <link name="-5 -> -8" road_name="6th St" lanes="2" length="0.094696" type="FW" id="-9" record="false">
+        <description></description>
+        <begin node_id="-5"/>
+        <end node_id="-8"/>
+        <fd densityCritical="293.33333333333334115556" flowMax="3600000.0" densityJam="586.66666666666668231112"/>
+        <dynamics type="CTM"/>
+        <qmax>10000</qmax>
+      </link>
+    </LinkList>
+
+</network>
+
+<fds>
+      <link link_id="-6" timestep="3">
+        <fd densityCritical="63.36" flowMax="0.0" densityJam="126.72"/>
+      </link>  
+	  <link link_id="-6" timestep="4">
+        <fd densityCritical="63.36" flowMax="0.0" densityJam="126.72"/>
+      </link>
+	  <link link_id="-6" timestep="5">
+        <fd densityCritical="63.36" flowMax="1080.0" densityJam="126.72"/>
+      </link>
+	  <link link_id="-6" timestep="6">
+        <fd densityCritical="63.36" flowMax="1080.0" densityJam="126.72"/>
+      </link>
+	  <link link_id="-6" timestep="7">
+        <fd densityCritical="63.36" flowMax="2160.0" densityJam="126.72"/>
+      </link>
+</fds>
+
+<InitialDensityProfile>
+<density link_id="-1">0.0</density>
+<density link_id="-2">0.0</density>
+<density link_id="-3">0.0</density>
+<density link_id="-4">0.0</density>
+<density link_id="-5">0.0</density>
+<density link_id="-6">0.0</density>
+<density link_id="-7">0.0</density>
+<density link_id="-8">0.0</density>
+<density link_id="-9">0.0</density>
+</InitialDensityProfile>
+
+<DemandProfileSet>
+<demand link_id="-8" start_time="0" dt="300" knob="1.0">8.0, 16.0, 8.0, 0.0</demand>
+</DemandProfileSet>
+</scenario>
+
